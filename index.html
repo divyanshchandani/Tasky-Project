@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Tasky</title>
 </head>
-<body>
+<body onload="loadInitialCardData">
   <!-- Modal -->
 <div class="modal fade" id="exampleModal" 
 tabindex="-1" aria-labelledby="exampleModalLabel" 
@@ -96,24 +96,7 @@ aria-hidden="true">
     </div>
     <section>
         <div class="row task_container">
-        <div class="col-md-6 col-lg-4">
-    <div class="card text-center">
-        <div class="card-header d-flex justify-content-end gap-2">      
-        <button type="button" class="btn btn-outline-success"><i class="fas fa-pencil-ruler"></i></button>
-        <button type="button" class="btn btn-outline-danger"><i class="fas fa-dumpster-fire"></i></button>
-        </div>
-        <img src="https://i.pinimg.com/originals/7b/c4/a3/7bc4a38a34b629ea5cea172f30274a4e.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        <div class="card-footer">
-        <button type="button" 
-        class="btn btn-outline-primary float-end">Open Task</button>
-        </div>
-      </div> 
-    </div>
+       
     </section>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
@@ -121,6 +104,6 @@ aria-hidden="true">
     crossorigin="anonymous"></script>
   <!--Our Javascript File-->
   <script src="index.js"></script>
-
+  
 </body>
 </html>
